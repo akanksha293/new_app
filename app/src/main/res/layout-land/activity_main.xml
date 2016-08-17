@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bright_foreground_disabled_material_light">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical|center_horizontal">
+        <Button
+            android:id="@+id/TrueButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prime"
+            android:drawableRight="@drawable/up"
+            android:onClick="onButtonClick1" />
+        <Button
+            android:id="@+id/FalseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Not Prime"
+            android:drawableRight="@drawable/down"
+            android:onClick="onButtonClick2" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingTop="16dp"
+        android:paddingLeft="16dp"
+        android:text="Is the following number a prime number or not?"
+        android:layout_gravity="center_horizontal|top" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingTop="25dp"
+        android:paddingLeft="250dp"
+        android:layout_height="51dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold"
+        android:id="@+id/textView" />
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NEXT/SKIP"
+        android:layout_gravity="center|bottom"
+        android:drawableRight="@drawable/next"
+        android:onClick="onButtonClick3" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MARKS"
+        android:id="@+id/button3"
+        android:layout_gravity="left|bottom"
+        android:onClick="onButtonClick4" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REFRESH MARKS"
+        android:id="@+id/button4"
+        android:layout_gravity="right|bottom"
+        android:onClick="onButtonClick5" />
+</FrameLayout>
